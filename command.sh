@@ -10,5 +10,6 @@ fi
 currentIP=$(minikube service collatz-app-service --url)
 
 for i in $(seq $1); do
-    echo curl "$currentIP/collatz/$i"
+     curl "$currentIP/collatz/$i"
+     echo
 done
